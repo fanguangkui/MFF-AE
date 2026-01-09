@@ -90,7 +90,7 @@ python3 train_OD.py -c ../../configs/Hela/ResAE/AE_ResLoss.yaml data_dir dataset
 ```
 
 ## 
-## 2. Case Study: LADC Data Analysis
+## 2. Detect outlier in LADC Data 
 
 Apply the model to detect outliers in the Lung Adenocarcinoma (LADC) dataset.
 
