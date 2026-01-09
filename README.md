@@ -1,6 +1,9 @@
 # MFF-AE:
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18193972.svg)](https://doi.org/10.5281/zenodo.18193972)
+
 ## Installation
+
 Please install the anaconda firstly.
 ```shell
 conda create -n ppOD python=3.7 
