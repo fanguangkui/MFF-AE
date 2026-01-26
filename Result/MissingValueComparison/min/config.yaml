@@ -1,0 +1,44 @@
+Linux_R_HOME: /home/server/anaconda3/envs/ppOD/lib/R
+Linux_R_USER: /home/server/anaconda3/envs/ppOD/lib/python3.8/site-packages/rpy2
+TestonAll: true
+Windows_R_USER: D:\program\Anaconda3\envs\ppOD\Lib\site-packages\rpy2
+data_dir: datasets/Fake
+data_prepare: true
+dataset_list_raw:
+- fake-shuffle_ratio-0.01-repeat_time-0.gz
+eval_status: false
+external_outlier_candidates:
+- Grub:
+  - iBAQ 83
+  - iBAQ 249
+  - iBAQ 263
+  - iBAQ 266
+- Biomolecules:
+  - iBAQ 83
+  - iBAQ 80
+  - iBAQ 227
+  - iBAQ 263
+  - iBAQ 266
+  - iBAQ 249
+fill_strategy: global_min
+generate_duplicates: false
+infer_datafile: ''
+infer_log_dir: ./Result/MissingValueComparison/min\Inference\
+infer_status: false
+input_matrix: feature_matrix
+joint_data: original
+logs_dir: ./Result/MissingValueComparison/min
+models:
+- IsolationForest:
+  - contamination:
+    - 0.03
+prepare_data_dir: ./Result/MissingValueComparison/min\step1_original_scale
+sample_ratio: -1
+save_model: true
+scale_strategy: minmax
+seed:
+- 42
+seed_nums: 5
+simulated_data_dir: ./Result/MissingValueComparison/min\step2_simulated_scale
+train_status: true
+visualize_stat: true
